@@ -1,7 +1,6 @@
 import express from "express";
+import { router } from "./routes/routes.js";
 
 export const api = express();
 
-api.get("/", (req, res) => {
-  res.json({ status: "ok" });
-});
+api.use(router);
