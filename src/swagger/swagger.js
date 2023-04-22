@@ -12,4 +12,10 @@ const doc = {
 const outputFile = "src/swagger/swagger-output.json";
 const endpointsFiles = ["src/api/routes/routes.js"];
 
-swaggerAutogen(outputFile, endpointsFiles, doc);
+async function generateSwaggerDoc() {
+  return await swaggerAutogen(outputFile, endpointsFiles, doc);
+}
+
+export const swagger = {
+  generateSwaggerDoc
+}
