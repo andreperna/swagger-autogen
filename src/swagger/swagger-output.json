@@ -81,6 +81,7 @@
         "tags": [
           "tables"
         ],
+        "summary": "return data content of table",
         "description": "",
         "parameters": [
           {
@@ -133,6 +134,7 @@
         "tags": [
           "tables"
         ],
+        "summary": "return content of id",
         "description": "",
         "parameters": [
           {

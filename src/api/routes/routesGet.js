@@ -28,10 +28,12 @@ router.get("/:appName", (req, res) => {
 
 router.get("/:appName/:tableName", (req, res) => {
   // #swagger.tags = ['tables']
+    // #swagger.summary = 'return data content of table'
   res.json({ appName: req.params.appName, tableName: req.params.tableName })
 });
 
 router.get("/:appName/:tableName/:id", (req, res) => {
   // #swagger.tags = ['tables']
+    // #swagger.summary = 'return content of id'
   res.json({ appName: req.params.appName, tableName: req.params.tableName, id: req.params.id })
 });
