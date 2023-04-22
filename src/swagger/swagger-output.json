@@ -13,6 +13,9 @@
   "paths": {
     "/": {
       "get": {
+        "tags": [
+          "Users"
+        ],
         "description": "",
         "parameters": [],
         "responses": {
@@ -24,6 +27,9 @@
     },
     "/status": {
       "get": {
+        "tags": [
+          "status"
+        ],
         "description": "",
         "parameters": [],
         "responses": {
@@ -35,6 +41,10 @@
     },
     "/apps": {
       "get": {
+        "tags": [
+          "apps"
+        ],
+        "summary": "return list of apps",
         "description": "",
         "parameters": [],
         "responses": {
@@ -46,6 +56,10 @@
     },
     "/{appName}": {
       "get": {
+        "tags": [
+          "apps"
+        ],
+        "summary": "return list of tables for this app",
         "description": "",
         "parameters": [
           {
@@ -64,6 +78,9 @@
     },
     "/{appName}/{tableName}": {
       "get": {
+        "tags": [
+          "tables"
+        ],
         "description": "",
         "parameters": [
           {
@@ -86,6 +103,9 @@
         }
       },
       "post": {
+        "tags": [
+          "tables"
+        ],
         "description": "",
         "parameters": [
           {
@@ -110,6 +130,9 @@
     },
     "/{appName}/{tableName}/{id}": {
       "get": {
+        "tags": [
+          "tables"
+        ],
         "description": "",
         "parameters": [
           {
@@ -137,7 +160,10 @@
           }
         }
       },
-      "patch": {
+      "put": {
+        "tags": [
+          "tables"
+        ],
         "description": "",
         "parameters": [
           {
@@ -166,6 +192,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "tables"
+        ],
         "description": "",
         "parameters": [
           {
