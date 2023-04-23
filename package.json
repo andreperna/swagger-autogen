@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node .",
-    "dev": "nodemon -r dotenv/config ."
+    "dev": "DOTENV_CONFIG_DEBUG=true DOTENV_CONFIG_PATH=$HOME/.dotenv/.env nodemon -r dotenv/config ."
   },
   "keywords": [],
   "author": "",

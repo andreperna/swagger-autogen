@@ -5,7 +5,7 @@ const doc = {
     title: "My API",
     description: "Description",
   },
-  host: "localhost:3000",
+  // host: "localhost:3000",
   schemes: ["http"],
 };
 
@@ -16,6 +16,6 @@ async function generateSwaggerDoc() {
   return await swaggerAutogen(outputFile, endpointsFiles, doc);
 }
 
-export const swagger = {
+export const swaggerGenDoc = {
   generateSwaggerDoc
 }

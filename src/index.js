@@ -1,6 +1,6 @@
 import { server } from "./server/server.js";
-import { swagger } from "./swagger/swagger.js";
+import { swaggerGenDoc } from "./swagger/swaggerGenDoc.js";
 
 
-await swagger.generateSwaggerDoc()
+await swaggerGenDoc.generateSwaggerDoc()
 server.start()

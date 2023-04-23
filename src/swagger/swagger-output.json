@@ -30,6 +30,7 @@
         "tags": [
           "status"
         ],
+        "summary": "return current status of api",
         "description": "",
         "parameters": [],
         "responses": {
